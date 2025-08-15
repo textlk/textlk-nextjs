@@ -1,0 +1,23 @@
+{
+  "name": "textlk-nextjs",
+  "version": "1.0.0",
+  "description": "Next.js wrapper for Text.lk SMS API using textlk-node",
+  "main": "lib/textlk.js",
+  "types": "lib/textlk.d.ts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": ["textlk", "sms", "nextjs", "textlk-node", "sms-api"],
+  "author": "Chamara Indrajith",
+  "license": "MIT",
+  "dependencies": {
+    "textlk-node": "^1.0.1",
+    "dotenv": "^16.0.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
