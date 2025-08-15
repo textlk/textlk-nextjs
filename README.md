@@ -275,7 +275,7 @@ sendExampleSMS();
 
 ## 📝 License
 
-MIT © Chamara Indrajith
+MIT © Text.lk SMS Gateway Sri Lanka
 
 ---
 
