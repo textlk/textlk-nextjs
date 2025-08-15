@@ -153,7 +153,9 @@ await sendSMS({
 
 ## 📝 License
 
-MIT License © [year] Text.lk SMS Gateway Sri Lanka
+MIT License
+
+Copyright © 2025 Text.lk SMS Gateway Sri Lanka
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
