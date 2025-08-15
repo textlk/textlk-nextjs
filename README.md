@@ -213,6 +213,57 @@ safeSendSMS();
 
 ---
 
+## ⚡ Quick Start Copy-Paste
+
+Create a file, for example `/pages/api/send-sms-quick.js`, or just use it in a script for testing:
+
+```javascript
+import { sendSMS } from 'textlk-nextjs';
+
+// Example function to send SMS
+export default async function sendExampleSMS() {
+  try {
+    // Simple SMS
+    const simple = await sendSMS({
+      phoneNumber: '94710000000',
+      message: 'Hello from TextLK!',
+    });
+    console.log('Simple SMS:', simple);
+
+    // Custom sender ID or API token
+    const custom = await sendSMS({
+      phoneNumber: '94710000000',
+      message: 'Custom sender ID example!',
+      senderId: 'CustomSender',
+      apiToken: process.env.TEXTLK_API_TOKEN, // optional override
+    });
+    console.log('Custom SMS:', custom);
+
+    // Sending OTP
+    const otp = await sendSMS({
+      phoneNumber: '94710000000',
+      message: 'Your OTP code is: 123456',
+    });
+    console.log('OTP SMS:', otp);
+
+    // Notification message
+    const notification = await sendSMS({
+      phoneNumber: '94710000000',
+      message: 'Your order #1234 has been shipped. Track here: https://tracking.example.com',
+    });
+    console.log('Notification SMS:', notification);
+
+  } catch (err) {
+    console.error('SMS sending failed:', err.message);
+  }
+}
+
+// Call the function immediately (for testing)
+sendExampleSMS();
+```
+
+---
+
 ## 📌 Notes
 
 * **Server-side only**: Never call `textlk-node` directly in the browser.
@@ -236,7 +287,3 @@ This README is **ready for npm users**:
 * Provides multiple practical examples
 
 ---
-
-If you want, I can also **add a “Quick Start Copy-Paste” section** with a **single file snippet** clients can drop into their Next.js project and start sending SMS immediately.
-
-Do you want me to do that?
