@@ -1,6 +1,6 @@
 {
   "name": "textlk-nextjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Next.js wrapper for Text.lk SMS API using textlk-node",
   "main": "lib/textlk.js",
   "types": "lib/textlk.d.ts",
