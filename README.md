@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/textlk-nextjs?color=blue) ![npm downloads](https://img.shields.io/npm/dt/textlk-nextjs) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-**A secure Next.js wrapper for the [Text.lk SMS Gateway API](https://www.text.lk/) in Sri Lanka using `textlk-node`.**
+**A secure Next.js wrapper for the [Text.lk SMS Gateway API](https://text.lk/) in Sri Lanka using `textlk-node`.**
 Send SMS easily from your Next.js app, with environment variable support and server-side safety. Fully compatible with JavaScript and TypeScript. Secure and easy to use.
 
 ---
